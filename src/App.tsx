@@ -352,8 +352,8 @@ export default function App() {
 
       {/* Main Container */}
       <main className="flex-1 max-w-6xl mx-auto w-full px-4 md:px-12 py-6 space-y-16">
-        <section className="grid items-center gap-12 lg:grid-cols-2">
-          <div className="space-y-8">
+        <section className="grid items-stretch gap-12 lg:grid-cols-2">
+          <div className="space-y-8 flex flex-col justify-between h-full">
             <div className="space-y-4">
               <div className="inline-block px-3 py-1 bg-amber-100 text-amber-800 text-xs font-bold uppercase tracking-widest rounded-full">
                 Tiny date. Big memory.
@@ -425,11 +425,11 @@ export default function App() {
           </div>
 
           {/* Example Reveal with soft background blur-blobs */}
-          <div className="relative">
+          <div className="relative h-full">
             <div className="absolute -top-12 -left-12 w-64 h-64 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"></div>
             <div className="absolute -bottom-12 -right-12 w-64 h-64 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 pointer-events-none"></div>
             
-            <div className="bg-slate-900 text-white p-10 rounded-[40px] shadow-2xl relative z-10 space-y-6">
+            <div className="bg-slate-900 text-white p-10 rounded-[40px] shadow-2xl relative z-10 space-y-6 h-full flex flex-col justify-between">
               <div className="flex justify-between items-start">
                 <div className="space-y-1">
                   <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Example Reveal</p>
@@ -537,9 +537,9 @@ export default function App() {
                 className="space-y-12"
               >
                 {/* Result Block Card with Minimal Slate styling */}
-                <div className="bg-white rounded-[40px] border border-slate-200/80 overflow-hidden shadow-2xl grid lg:grid-cols-[1.2fr_0.8fr]">
+                <div className="bg-white rounded-[40px] border border-slate-200/80 overflow-hidden shadow-2xl grid lg:grid-cols-2 items-stretch h-full">
                   {/* Results story and details parameters */}
-                  <div className="p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-slate-100 space-y-8">
+                  <div className="p-8 sm:p-12 border-b lg:border-b-0 lg:border-r border-slate-100 space-y-8 h-full flex flex-col justify-between">
                     <div className="flex flex-wrap gap-2 text-xs">
                       <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-3.5 py-1.5 text-slate-700 font-semibold">
                         <MapPin className="h-3.5 w-3.5 text-slate-500" />
@@ -591,7 +591,7 @@ export default function App() {
                   </div>
 
                   {/* Share actions or print configuration card container */}
-                  <div className="bg-gradient-to-br from-amber-50 to-orange-50/30 p-8 sm:p-12 flex flex-col justify-between">
+                  <div className="bg-gradient-to-br from-amber-50 to-orange-50/30 p-8 sm:p-12 flex flex-col justify-between h-full">
                     <div>
                       <p className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Shareable Card</p>
                       <div className="mt-4 rounded-3xl bg-white p-6 shadow-xs border border-slate-100/80 transition-all">
